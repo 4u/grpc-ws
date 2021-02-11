@@ -1,15 +1,15 @@
 {
   "name": "grpc-ws",
-  "version": "0.2.0",
+  "version": "0.1.0",
   "description": "",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile-grpcbus": "npm run compile-grpcbus-js & npm run compile-grpcbus-ts",
-    "compile-grpcbus-js": "pbjs -t json-module -w commonjs -o src/grpc-bus.js node_modules/grpc-bus/proto/grpc-bus.proto",
-    "compile-grpcbus-ts": "pbjs -t static-module node_modules/grpc-bus/proto/grpc-bus.proto | pbts -o src/grpc-bus.d.ts -",
-    "build": "npm run compile-grpcbus & tsc"
+    "pb": "npm run pb-js & npm run pb-ts",
+    "pb-js": "pbjs -t json-module -w commonjs -o src/grpc-bus.js node_modules/grpc-bus/proto/grpc-bus.proto",
+    "pb-ts": "pbjs -t static-module node_modules/grpc-bus/proto/grpc-bus.proto | pbts -o src/grpc-bus.d.ts -",
+    "build": "tsc"
   },
   "author": "",
   "license": "ISC",
