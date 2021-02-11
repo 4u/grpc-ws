@@ -1,6 +1,6 @@
 {
   "name": "grpc-ws",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cleanup": "rm -rf lib && mkdir lib",
@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "grpc-bus": "4u/grpc-bus#3ff0ca79cc60de8c093917e668314f65f173365e",
+    "grpc-bus": "4u/grpc-bus#56d35479d5e956ac6eb10a6d0a9b4ed668366611",
     "universal-websocket-client": "1.0.2"
   },
   "peerDependencies": {

@@ -1,5 +1,8 @@
 {
   "compilerOptions": {
+    "lib": ["es2020", "dom"],
+    "module": "commonjs",
+    "target": "es2019",
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "declaration": true,
@@ -8,8 +11,6 @@
     "downlevelIteration": true,
     "forceConsistentCasingInFileNames": true,
     "importHelpers": true,
-    "lib": ["es2017", "es2016", "dom", "es2015"],
-    "module": "esnext",
     "moduleResolution": "node",
     "noImplicitAny": true,
     "noImplicitReturns": true,
@@ -18,7 +19,6 @@
     "sourceMap": true,
     "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
-    "target": "es6",
     "strictBindCallApply": true,
     "strictFunctionTypes": true,
     "outDir": "lib"
