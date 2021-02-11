@@ -21,12 +21,15 @@
   "devDependencies": {
     "@types/ws": "7.4.0",
     "chalk": "^4.1.0",
+    "escodegen": "^2.0.0",
     "espree": "^7.3.1",
     "estraverse": "^5.2.0",
+    "jsdoc": "^3.6.6",
     "semver": "^7.3.4",
     "tmp": "^0.2.1",
     "ts-proto": "1.55.0",
     "tslib": "2.1.0",
-    "typescript": "4.1.4"
+    "typescript": "4.1.4",
+    "uglify-js": "^3.12.7"
   }
 }
