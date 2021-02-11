@@ -20,6 +20,7 @@
     "grpc-bus": "4u/grpc-bus#3ff0ca79cc60de8c093917e668314f65f173365e",
     "universal-websocket-client": "1.0.2"
   },
+  "files": ["lib/*"],
   "peerDependencies": {
     "grpc": ">= 1.24.4 < 2",
     "protobufjs": ">= 6.10.2 < 7"
