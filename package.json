@@ -1,9 +1,6 @@
 {
   "name": "grpc-ws",
-  "version": "0.2.1",
-  "description": "",
-  "main": "./lib/index.js",
-  "types": "./lib/index.d.ts",
+  "version": "0.3.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "pb": "npm run pb-js & npm run pb-ts",
@@ -13,16 +10,10 @@
   },
   "author": "",
   "license": "ISC",
-  "exports": {
-    "./": "./lib/"
-  },
   "dependencies": {
     "grpc-bus": "4u/grpc-bus#3ff0ca79cc60de8c093917e668314f65f173365e",
     "universal-websocket-client": "1.0.2"
   },
-  "files": [
-    "lib/*"
-  ],
   "peerDependencies": {
     "grpc": ">= 1.24.4 < 2",
     "protobufjs": ">= 6.10.2 < 7"

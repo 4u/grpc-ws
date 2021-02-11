@@ -1,8 +1,6 @@
-.cache
-dist
 node_modules
 lib/*.js
 lib/*.ts
 lib/*.map
+lib/*.json
 src/grpc-bus.*
-example/api.*
