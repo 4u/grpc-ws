@@ -1,0 +1,7 @@
+.cache
+dist
+node_modules
+example
+lib/*.js
+lib/*.ts
+lib/*.map
