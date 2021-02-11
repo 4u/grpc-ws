@@ -5,3 +5,4 @@ example
 lib/*.js
 lib/*.ts
 lib/*.map
+src/grpc-bus.*
