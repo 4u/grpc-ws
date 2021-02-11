@@ -3,6 +3,7 @@
   "version": "0.3.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "cleanup": "rm -rf lib && mkdir lib",
     "pb": "npm run pb-js & npm run pb-ts",
     "pb-js": "pbjs -t json-module -w commonjs -o src/grpc-bus.js node_modules/grpc-bus/proto/grpc-bus.proto",
     "pb-ts": "pbjs -t static-module node_modules/grpc-bus/proto/grpc-bus.proto | pbts -o src/grpc-bus.d.ts -",
