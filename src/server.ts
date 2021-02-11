@@ -7,12 +7,20 @@ const GBClientMessage = gbProtoRoot.lookup('GBClientMessage');
 const GBServerMessage = gbProtoRoot.lookup('GBServerMessage');
 
 type Config = {
-  proto: import('protobufjs').Root
+  proto: unknown;
   port: number;
   hosts: string[];
 };
 
+function isProtobufRoot(proto: unknown): proto is import('protobufjs').Root {
+  return typeof (proto as Record<string, unknown>)?.lookup === 'function';
+}
+
 export function listen({proto, hosts, port}: Config): void {
+  if (!isProtobufRoot(proto)) {
+    throw new Error('proto should be an instance of protobufjs.Root');
+  }
+
   var wss = new WebSocketServer({ port });
 
   console.log('Starting...');

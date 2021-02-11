@@ -1,6 +1,6 @@
 {
   "name": "grpc-ws",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -9,13 +9,6 @@
     "compile-grpcbus": "npm run compile-grpcbus-js & npm run compile-grpcbus-ts",
     "compile-grpcbus-js": "pbjs -t json-module -w commonjs -o src/grpc-bus.js node_modules/grpc-bus/proto/grpc-bus.proto",
     "compile-grpcbus-ts": "pbjs -t static-module node_modules/grpc-bus/proto/grpc-bus.proto | pbts -o src/grpc-bus.d.ts -",
-    "compile-api": "npm run compile-api-js & npm run compile-api-ts",
-    "compile-api-js": "pbjs -t json-module -w commonjs -o example/api.js protos/ClientFaqApi.proto protos/ClientApi.proto",
-    "compile-api-ts": "pbjs -t static-module protos/ClientFaqApi.proto protos/ClientApi.proto | pbts -o example/api.d.ts -",
-    "compile-proto": "npm run compile-api & npm run compile-grpcbus",
-    "dev-client": "npm run compile-api && parcel example/index.html",
-    "build-client": "NODE_ENV=production parcel build example/index.html",
-    "dev-server": "node src/server.js",
     "build": "npm run compile-grpcbus & tsc"
   },
   "author": "",
