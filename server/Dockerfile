@@ -11,6 +11,6 @@ ENV NODE_ENV=production \
 RUN npm install grpc-ws@latest
 COPY index.js /app/
 
-CMD ["npm", "start"]
+CMD ["node", "index.js"]
 
 EXPOSE 80
