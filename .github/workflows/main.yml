@@ -20,8 +20,6 @@ jobs:
       - run: npm run cleanup
       - run: npm run pb
       - run: npm run build
-      - run: cp package.json lib/package.json
-      - run: cp package-lock.json lib/package-lock.json
       - run: cd lib && npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}

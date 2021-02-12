@@ -8,8 +8,7 @@ ENV NODE_ENV=production \
   NODE_VERBOSE=false \
   NPM_CONFIG_PRODUCTION=
 
-COPY package.json package-lock.json /app/
-RUN npm install --production
+RUN npm install grpc-ws@latest
 COPY index.js /app/
 
 CMD ["npm", "start"]

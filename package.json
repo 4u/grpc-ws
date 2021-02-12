@@ -1,22 +1,22 @@
 {
   "name": "grpc-ws",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cleanup": "rm -rf lib && mkdir lib",
     "pb": "npm run pb-js & npm run pb-ts",
     "pb-js": "pbjs -t json-module -w commonjs -o src/grpc-bus.js node_modules/grpc-bus/proto/grpc-bus.proto",
     "pb-ts": "pbjs -t static-module node_modules/grpc-bus/proto/grpc-bus.proto | pbts -o src/grpc-bus.d.ts -",
-    "build": "tsc"
+    "build": "tsc && cp package.json lib/package.json && cp package-lock.json lib/package-lock.json"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "grpc-bus": "4u/grpc-bus#56d35479d5e956ac6eb10a6d0a9b4ed668366611",
+    "grpc-bus": "4u/grpc-bus#b8400410ba78b116bfc190124c380d7a0ef46bc9",
     "universal-websocket-client": "1.0.2"
   },
   "peerDependencies": {
-    "grpc": ">= 1.24.4 < 2",
+    "@grpc/grpc-js": ">= 1.2.6 < 2",
     "protobufjs": ">= 6.10.2 < 7"
   },
   "devDependencies": {

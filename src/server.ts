@@ -41,7 +41,7 @@ export function listen({proto, hosts, port}: Config): void {
       } else {
         console.error('WebSocket closed before message could be sent:', pbMessage);
       }
-    }, require('grpc'));
+    }, require('@grpc/grpc-js'));
     
     ws.on('message', function incoming(data: any, flags: any) {
       console.log('received (raw):', data);
