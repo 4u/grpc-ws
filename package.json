@@ -25,6 +25,7 @@
     "espree": "^7.3.1",
     "estraverse": "^5.2.0",
     "jsdoc": "^3.6.6",
+    "minimist": "^1.2.5",
     "semver": "^7.3.4",
     "tmp": "^0.2.1",
     "ts-proto": "1.55.0",
