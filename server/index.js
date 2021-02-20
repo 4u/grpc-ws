@@ -1,13 +1,15 @@
 const {listen} = require('grpc-ws/server');
 const apiRoot = require('./api');
 
-const hosts = (process.env.HOSTS || '')
+const endpoints = (process.env.ENDPOINTS || '')
   .split(/,\s+/)
   .map(host => host.trim())
   .filter(Boolean);
 
 listen({
-  hosts,
+  endpoints,
   proto: apiRoot,
-  port: 80,
+  ws: {
+    port: 80,
+  }
 });

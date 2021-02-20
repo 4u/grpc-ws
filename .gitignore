@@ -1,6 +1,3 @@
 node_modules
-lib/*.js
-lib/*.ts
-lib/*.map
-lib/*.json
+lib
 src/grpc-bus.*
